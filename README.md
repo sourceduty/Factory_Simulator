@@ -71,26 +71,31 @@ Breakdown of the Production Line Stages:
 1. Parts Fabrication:
 
 Circuit Board Manufacturing: Electronic circuits are printed and components like chips are mounted.
+
 Plastic Molding for Body and Components: All plastic parts including the body, buttons, and scroll wheel are molded.
 
 2. Assembly Station:
 
 Assembling Components: Circuit board, scroll wheel, buttons, and other internal mechanisms are assembled within the plastic body.
+
 Screw and Clip Fitting: The body parts are screwed or clipped together to enclose all internal components securely.
 
 3. Quality Test:
 
 Testing Device Setup: Each assembled mouse is connected to a test device to check circuit connections and initial functionality.
+
 Functionality and Click Test: All buttons and the scroll wheel are tested for responsiveness and durability.
 
 4. Packaging Station:
 
 Boxing and Labeling: Each tested and approved mouse is placed in its packaging along with user manuals and warranty information.
+
 Quality Check Before Box: Final visual and functional checks are made before the product is sealed in its packaging.
 
 5. Final Product:
 
 Computer Mouse: The finished, packaged product ready for distribution and sale.
+
 Shipping: Packaged products are shipped to distributors or directly to consumers.
 
 This layout focuses on a streamlined flow from component fabrication through to final shipping, ensuring quality checks and efficient assembly processes.
