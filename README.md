@@ -63,7 +63,10 @@ Input --> | Combined Machine | --> Output
             (Cutting, Molding, Assembly)
 ```
 
-Deciding between a production line with multiple machines or a single machine that combines all processes depends largely on the specific needs of the production. For larger operations with variable products, a multi-machine production line provides flexibility and scalability. For smaller operations or those with limited space and uniform products, a combined machine might be more efficient and cost-effective. Multi-Machine Production Line: Best for flexibility, scalability, and simultaneous multiple batch processing. Single Production Line Machine: Best for space-saving, potentially lower transition times, but higher risks in maintenance and operation disruptions.
+Deciding between a production line with multiple machines or a single machine that combines all processes depends largely on the specific needs of the production. For larger operations with variable products, a multi-machine production line provides flexibility and scalability. For smaller operations or those with limited space and uniform products, a combined machine might be more efficient and cost-effective. 
+
+- Multi-Machine Production Line: Best for flexibility, scalability, and simultaneous multiple batch processing. 
+- Single Production Line Machine: Best for space-saving, potentially lower transition times, but higher risks in maintenance and operation disruptions.
 
 <br>    
 </details>
