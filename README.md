@@ -3,7 +3,9 @@
 [Factory Simulator](https://chat.openai.com/g/g-tYRlt7b2g-factory-simulator) is designed to assist in organizing and planning the structure of industrial factories. It helps users create and optimize factory layouts and understand the intricacies of production and assembly processes through text-based diagrams. The tool offers guidance on arranging factory components efficiently, analyzing and improving existing layouts, and translating complex industrial processes into structured, easy-to-understand diagrams. This supports better visualization, decision-making, and process improvement in factory settings.
 
 #
-### Example Usage
+
+<details><summary>Example Usage</summary>
+<br>
 
 Below is an example of a simple production line for assembling a small electronic device, such as a smartphone. This diagram will illustrate the flow from receiving raw materials to the final packaging stage using plain text symbols and structure.
 
@@ -36,6 +38,34 @@ Below is an example of a simple production line for assembling a small electroni
 5. Packaging and Shipping: Finally, the products are packaged, labeled, and prepared for distribution. Packaging also includes safety checks to ensure products are securely packed to avoid damage during transport.
 
 This layout aims to provide a clear, streamlined workflow for the production of electronic devices, optimizing each stage for efficiency and quality control.
+
+<br>    
+</details>
+
+#
+### Notes
+
+<details><summary>Comparison of Production Line and Production Line Machine</summary>
+<br>
+
+In the multi-machine production line, each step of the process is handled by a different machine. This separation can make maintenance and updating processes easier, as each machine can be optimized or replaced independently. It also allows for simultaneous processing of multiple batches in different stages, which can increase throughput.
+
+```
+Input --> | Machine A | -- > | Machine B | -- > | Machine C | --> Output
+           (Cutting)           (Molding)         (Assembly)
+```
+
+In contrast, the single production line machine integrates all processes into one unit. This compactness saves space and might reduce transition times between processes. However, it can lead to higher initial costs and complexity in maintenance. If one part of the machine encounters an issue, it could halt the entire production process.
+
+```
+Input --> | Combined Machine | --> Output
+            (Cutting, Molding, Assembly)
+```
+
+Deciding between a production line with multiple machines or a single machine that combines all processes depends largely on the specific needs of the production. For larger operations with variable products, a multi-machine production line provides flexibility and scalability. For smaller operations or those with limited space and uniform products, a combined machine might be more efficient and cost-effective. Multi-Machine Production Line: Best for flexibility, scalability, and simultaneous multiple batch processing. Single Production Line Machine: Best for space-saving, potentially lower transition times, but higher risks in maintenance and operation disruptions.
+
+<br>    
+</details>
 
 ***
 Copyright (C) 2024, Sourceduty - All Rights Reserved.
