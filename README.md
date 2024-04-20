@@ -131,5 +131,12 @@ Deciding between a production line with multiple machines or a single machine th
 <br>    
 </details>
 
+#
+### Related Links
+
+[Garbage](https://github.com/sourceduty/Garbage)
+<br>
+[Chinese Manufacturing](https://github.com/sourceduty/Chinese_Manufacturing)
+
 ***
 Copyright (C) 2024, Sourceduty - All Rights Reserved.
