@@ -234,6 +234,58 @@ Closed product lifecycles aren't always possible because as some companies grow,
 <br>    
 </details>
 
+<details><summary>Automation Pyramid</summary>
+<br>
+
+The Automation Pyramid is a structured framework used to visualize the different layers of automation within a manufacturing environment. Starting from the bottom, Level 0 consists of field devices like sensors and actuators that directly interact with the production processes. Moving up, Level 1 involves basic controls through Programmable Logic Controllers (PLCs) which manage specific machines or processes. Level 2 extends this control through a more integrated approach using PLCs and Distributed Control Systems (DCS) to synchronize operations across several machines. At Level 3, supervisory control systems provide crucial interfaces for human operators, offering real-time operational data and control capabilities. The fourth level focuses on operations management, utilizing Manufacturing Execution Systems (MES) to optimize production schedules, manage inventory, and ensure quality. The apex of the pyramid, Level 5, integrates all operational data into Enterprise Resource Planning (ERP) systems, facilitating broad strategic management across the entire organization. This pyramid effectively illustrates how data and control flow upward through increasingly sophisticated systems, enabling comprehensive and integrated factory automation.
+
+```
+                                  ┌────────────┐
+                                  │ Level 5:   │
+                                  │ Enterprise │
+                                  │ Management │
+                                  └────────────┘
+                                         │
+                                         ▼
+                                  ┌────────────┐
+                                  │ Level 4:   │
+                                  │ Operations │
+                                  │ Management │
+                                  └────────────┘
+                                         │
+                                         ▼
+                                  ┌────────────┐
+                                  │ Level 3:   │
+                                  │ Supervisory│
+                                  │ Control    │
+                                  └────────────┘
+                                         │
+                                         ▼
+                                  ┌────────────┐
+                                  │ Level 2:   │
+                                  │ Control    │
+                                  │ (PLCs/DCS) │
+                                  └────────────┘
+                                         │
+                                         ▼
+                                  ┌────────────┐
+                                  │ Level 1:   │
+                                  │ Sensing &  │
+                                  │ Actuation  │
+                                  └────────────┘
+                                         │
+                                         ▼
+                                  ┌────────────┐
+                                  │ Level 0:   │
+                                  │ Field      │
+                                  │ Devices    │
+                                  └────────────┘
+
+```
+
+<br>    
+</details>
+
 #
 ### Related Links
 
