@@ -131,6 +131,16 @@ Deciding between a production line with multiple machines or a single machine th
 <br>    
 </details>
 
+<details><summary>Closed Product Lifecycles</summary>
+<br>
+
+### Closed Product Lifecycles
+
+Closed product lifecycles aren't always possible because as some companies grow, they stop producing their products, change materials, or change their business operations. Some products have to be single-use, like medication containers, food packaging, glass, pressure tanks, and consumer electronics. Returning product garbage to the original producer of a product might not always be possible because of the consumer's decisions, product scarcity, and product value.
+
+<br>    
+</details>
+
 #
 ### Related Links
 
