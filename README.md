@@ -294,6 +294,8 @@ The Automation Pyramid is a structured framework used to visualize the different
 [Chinese Manufacturing](https://github.com/sourceduty/Chinese_Manufacturing)
 <br>
 [Mechanical Machine](https://chat.openai.com/g/g-tDh9fIgp2-mechanical-machine)
+<br>
+[Process Diagram](https://chat.openai.com/g/g-BKPxbMYJD-process-diagram)
 
 ***
 Copyright (C) 2024, Sourceduty - All Rights Reserved.
