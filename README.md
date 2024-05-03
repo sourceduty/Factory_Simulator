@@ -296,6 +296,8 @@ The Automation Pyramid is a structured framework used to visualize the different
 [Mechanical Machine](https://chat.openai.com/g/g-tDh9fIgp2-mechanical-machine)
 <br>
 [Process Diagram](https://chat.openai.com/g/g-BKPxbMYJD-process-diagram)
+<br>
+[Process Automation](https://chat.openai.com/g/g-BCcGUvggx-process-automation)
 
 ***
 Copyright (C) 2024, Sourceduty - All Rights Reserved.
