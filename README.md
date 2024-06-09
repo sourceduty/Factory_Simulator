@@ -25,8 +25,8 @@ The Beer Store production loop incorporates a sustainable approach by integratin
                                                  |
                                                  v
                               (Reusable)        / \       (Recycling)
-                            +---------+        /   \         +---------+
-                            |         |       /     \        |         |
+                            +---------+        /   \        +---------+
+                            |         |       /     \       |         |
                             | Bottle  |     /       \       | Material |
                             | Washing |<---+         +----->| Recycle  |
                             | &       |       Fail          | Process  |
@@ -36,8 +36,8 @@ The Beer Store production loop incorporates a sustainable approach by integratin
                                   |                                |
                                   |                                |
                                   v                                v
-+---------+------------+   +-----+-----+                 +---------+---------+
-|  Glass Manufacturing  |   |  Raw Material Input  |     |  Glass Manufacturing  |
++---------+------------+    +---------+-------------+     +---------+------------+
+|  Glass Manufacturing  |   |  Raw Material Input   |     |  Glass Manufacturing  |
 +----------+------------+   +----------+------------+     +----------+-----------+
            |                             |                             |
            v                             v                             v
