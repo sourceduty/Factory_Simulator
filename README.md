@@ -175,6 +175,35 @@ This layout focuses on a streamlined flow from component fabrication through to 
 <br>    
 </details>
 
+<details><summary>Vertical Integration of PCB and Component Manufacturing</summary>
+<br>
+
+```
+
+Entrance
+   |
+   V
+[Raw Material Storage] ---> [Component Storage]
+   |                              |
+   V                              V
+[PCB Manufacturing]       [Component Manufacturing]
+   |                              |
+   V                              V
+[PCB Testing]  <-------  [Component Assembly]
+   |                              |
+   V                              V
+[Finished Goods Storage] ---> [Quality Control]
+   |                              |
+   V                              V
+  Shipping  <-------------------  Packaging
+
+```
+
+This factory is meticulously designed to streamline the production of PCBs and their associated components, optimizing efficiency and quality control throughout the manufacturing process. The layout features a logical flow beginning with the Raw Material Storage, strategically positioned near the entrance for easy access. Raw materials move seamlessly to PCB and Component Manufacturing areas, each equipped with specialized processes like cutting, drilling, etching, and molding. The factory's central hub, the Component Assembly area, efficiently integrates tested PCBs and components, facilitating smooth operations. Quality Control and Packaging stations are strategically placed near Finished Goods Storage, ensuring that only the highest quality products are dispatched. By incorporating lean manufacturing principles, automation, and continuous workflow analysis, the factory not only minimizes waste but also maximizes productivity and product quality. This design supports a cohesive production environment, ensuring timely delivery and customer satisfaction.
+
+<br>    
+</details>
+
 #
 ### Notes
 
