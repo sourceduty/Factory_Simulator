@@ -8,6 +8,8 @@
 <details><summary>The Beer Store Production Loop</summary>
 <br>
 
+![Beer Line](https://github.com/sourceduty/Factory_Simulator/assets/123030236/2b9e1ea7-2ec6-4ede-97fa-e2cb2fd5e200)
+
 The Beer Store production loop incorporates a sustainable approach by integrating the return, inspection, and reuse or recycling of glass bottles. This process begins with the collection of returned bottles, which are then subjected to a rigorous inspection and sorting process. Reusable bottles are washed, sterilized, and re-entered into the beer bottling line, effectively reducing the demand for new glass production and minimizing waste. Bottles that fail the quality inspection are not discarded; instead, they are processed in a material recycling stream where they are converted back into raw glass material. This recycled glass then re-enters the production loop, either being formed into new bottles or utilized in other glass products. This circular production system not only ensures the efficient use of resources but also lessens the environmental impact by cutting down on waste and the need for new raw materials. The entire process is tightly integrated, from brewing and bottling to distribution, ensuring a consistent and sustainable operation that supports both environmental objectives and the business's bottom line.
 
 ```
@@ -341,6 +343,8 @@ The Automation Pyramid is a structured framework used to visualize the different
 
 <details><summary>Assembly Area and Assembly Line</summary>
 <br>
+
+![Metal Assembly](https://github.com/sourceduty/Factory_Simulator/assets/123030236/2004292c-033b-417f-84c0-26259bf8380e)
 
 An assembly area and an assembly line represent two distinct approaches to manufacturing and production, each with its own characteristics, advantages, and limitations. An assembly area is typically a more flexible workspace where various tasks or stages of production are completed in one general location. In this setting, workers often perform multiple functions, and the workflow can be adjusted based on the specific needs of the product being assembled. This approach is well-suited for low-volume, high-mix production environments where customization and adaptability are essential. The assembly area allows for greater creativity and problem-solving as workers handle diverse tasks and can make on-the-fly adjustments to accommodate unique or changing requirements.
 
