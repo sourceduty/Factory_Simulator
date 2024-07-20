@@ -369,6 +369,8 @@ The optimal layout for a factory often depends on the type of production and the
 [Process Automation](https://chat.openai.com/g/g-BCcGUvggx-process-automation)
 <br>
 [Manufacturing Source](https://github.com/sourceduty/Manufacturing_Source)
+<br>
+[Process](https://github.com/sourceduty/Process)
 
 ***
 Copyright (C) 2024, Sourceduty - All Rights Reserved.
