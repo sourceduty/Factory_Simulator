@@ -169,7 +169,7 @@ Optimal Automated Factory Machine Tooling Processes
 | Welding          | Robotic MIG Welding        | Metal                   | Fast          | 14.5             |
 | Welding          | Automated TIG Welder       | Metal                   | Fast          | 14.0             |
 | Cutting          | Automated Guillotine Shear | Metal/Sheet Metal       | Fast          | 14.0             |
-| Cleaning         | Automated Ultrasonic       | Metal/Tools            | Fast          | 13.5             |
+| Cleaning         | Automated Ultrasonic       | Metal/Tools             | Fast          | 13.5             |
 | Cleaning         | Robotic Cleaning Machine   | Various Surfaces        | Fast          | 14.0             |
 | Tensioning       | Automated Cable Tensioner  | Wire/Cable              | Fast          | 11.5             |
 | Assembling       | Robotic Assembly Machine   | Various                 | Fast          | 15.0             |
