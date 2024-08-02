@@ -86,69 +86,67 @@ Optimal Factory Hand Tooling Processes
 Optimal Factory Machine Tooling Processes
 
 ```
-| Process          | Tool Type                | Material Type           | Time Rating   | Efficiency Score |
-|------------------|--------------------------|-------------------------|---------------|------------------|
-| Cutting          | Hand-held Circular Saw   | Wood/Plastic            | Fast          | 8.5              |
-| Cutting          | Band Saw                 | Metal/Wood              | Fast          | 9.0              |
-| Cutting          | Table Saw                | Wood/Plastic            | Fast          | 9.5              |
-| Cutting          | Angle Grinder            | Metal/Stone             | Fast          | 8.0              |
-| Cutting          | Laser Cutter             | Metal/Plastic           | Fast          | 14.0             |
-| Cutting          | Water Jet Cutter         | Metal/Stone/Plastic     | Fast          | 14.5             |
-| Cutting          | Plasma Cutter            | Metal                   | Fast          | 13.0             |
-| Cutting          | CNC Plasma Cutter        | Metal                   | Fast          | 15.0             |
-| Cutting          | Guillotine Shear         | Metal/Sheet Metal       | Fast          | 13.5             |
-| Drilling         | Drill Press              | Metal/Wood              | Fast          | 14.0             |
-| Drilling         | CNC Drill Machine        | Metal/Wood/Plastic      | Fast          | 15.0             |
-| Drilling         | Radial Drill Machine     | Metal/Wood              | Fast          | 12.5             |
-| Sanding          | Belt Sander              | Wood/Metal              | Fast          | 8.0              |
-| Sanding          | Orbital Sander           | Wood/Plastic            | Fast          | 7.5              |
-| Sanding          | Disc Sander              | Metal/Wood              | Fast          | 8.5              |
-| Sanding          | Drum Sander              | Wood                    | Fast          | 8.0              |
-| Sanding          | Wide Belt Sander         | Wood                    | Fast          | 9.0              |
-| Polishing        | Buffing Wheel            | Plastic                 | Moderate      | 5.5              |
-| Polishing        | Polishing Lathe          | Metal                   | Fast          | 7.0              |
-| Polishing        | Vibratory Finisher       | Metal/Plastic           | Fast          | 9.0              |
-| Polishing        | Barrel Polisher          | Metal                   | Fast          | 8.5              |
-| Grinding         | Bench Grinder            | Metal/Tools             | Fast          | 8.0              |
-| Grinding         | Surface Grinder          | Metal                   | Fast          | 9.5              |
-| Grinding         | Cylindrical Grinder      | Metal                   | Fast          | 9.0              |
-| Grinding         | Centerless Grinder       | Metal                   | Fast          | 8.5              |
-| Sharpening       | Electric Sharpener       | Knives/Tools            | Fast          | 9.0              |
-| Sharpening       | Tool and Cutter Grinder  | Metal/Tools             | Fast          | 8.5              |
-| Shaping          | CNC Router               | Wood/Plastic/Metal      | Fast          | 12.0             |
-| Shaping          | Lathe Machine            | Metal/Wood              | Fast          | 10.0             |
-| Shaping          | Milling Machine          | Metal/Plastic           | Fast          | 13.0             |
-| Shaping          | CNC Milling Machine      | Metal/Wood/Plastic      | Fast          | 15.0             |
-| Shaping          | CNC Lathe Machine        | Metal/Plastic           | Fast          | 14.0             |
-| Shaping          | Hydraulic Press Brake    | Metal                   | Fast          | 12.5             |
-| Shaping          | Injection Molding Machine| Plastic                 | Fast          | 14.5             |
-| Welding          | MIG Welder               | Metal                   | Fast          | 9.5              |
-| Welding          | TIG Welder               | Metal                   | Fast          | 9.0              |
-| Welding          | Spot Welder              | Metal                   | Fast          | 10.0             |
-| Welding          | CNC Welding Machine      | Metal                   | Fast          | 14.0             |
-| Cutting          | Laser Cutter             | Metal/Plastic           | Fast          | 14.0             |
-| Cleaning         | Power Washer             | Various Surfaces        | Fast          | 12.5             |
-| Cleaning         | Ultrasonic Cleaner       | Metal/Tools             | Fast          | 13.0             |
-| Cleaning         | Industrial Vacuum        | Dust/Debris             | Fast          | 11.0             |
-| Tensioning       | Automatic Cable Tensioner| Wire/Cable              | Fast          | 11.0             |
-| Assembling       | Power Screwdriver        | Metal/Wood              | Fast          | 10.5             |
-| Assembling       | CNC Assembly Machine     | Various                 | Fast          | 14.0             |
-| Sealing          | Pneumatic Sealant Gun    | Various                 | Fast          | 10.0             |
-| Painting         | Spray Gun                | Various                 | Fast          | 11.5             |
-| Painting         | Powder Coating Machine   | Metal                   | Fast          | 13.5             |
-| Clamping         | Pneumatic Clamp          | Metal/Wood              | Fast          | 13.0             |
-| Lifting          | Hydraulic Lift           | Heavy Objects/Metal     | Fast          | 12.0             |
-| Lifting          | Overhead Crane           | Heavy Objects           | Fast          | 14.0             |
-| Engraving        | Laser Engraver           | Metal/Wood/Plastic      | Fast          | 10.0             |
-| Engraving        | CNC Engraving Machine    | Metal/Wood/Plastic      | Fast          | 13.0             |
-| Riveting         | Pneumatic Riveter        | Metal                   | Fast          | 9.0              |
-| Riveting         | CNC Riveting Machine     | Metal                   | Fast          | 12.0             |
+| Process          | Tool Type                  | Material Type           | Time Rating   | Efficiency Score |
+|------------------|----------------------------|-------------------------|---------------|------------------|
+| Cutting          | Hand-held Circular Saw     | Wood/Plastic            | Fast          | 8.5              |
+| Cutting          | Band Saw                   | Metal/Wood              | Fast          | 9.0              |
+| Cutting          | Table Saw                  | Wood/Plastic            | Fast          | 9.5              |
+| Cutting          | Angle Grinder              | Metal/Stone             | Fast          | 8.0              |
+| Cutting          | Laser Cutter               | Metal/Plastic           | Fast          | 14.0             |
+| Cutting          | Water Jet Cutter           | Metal/Stone/Plastic     | Fast          | 14.5             |
+| Cutting          | Plasma Cutter              | Metal                   | Fast          | 13.0             |
+| Cutting          | CNC Plasma Cutter          | Metal                   | Fast          | 15.0             |
+| Cutting          | Guillotine Shear           | Metal/Sheet Metal       | Fast          | 13.5             |
+| Drilling         | Drill Press                | Metal/Wood              | Fast          | 14.0             |
+| Drilling         | CNC Drill Machine          | Metal/Wood/Plastic      | Fast          | 15.0             |
+| Drilling         | Radial Drill Machine       | Metal/Wood              | Fast          | 12.5             |
+| Sanding          | Belt Sander                | Wood/Metal              | Fast          | 8.0              |
+| Sanding          | Orbital Sander             | Wood/Plastic            | Fast          | 7.5              |
+| Sanding          | Disc Sander                | Metal/Wood              | Fast          | 8.5              |
+| Sanding          | Drum Sander                | Wood                    | Fast          | 8.0              |
+| Sanding          | Wide Belt Sander           | Wood                    | Fast          | 9.0              |
+| Polishing        | Buffing Wheel              | Plastic                 | Moderate      | 5.5              |
+| Polishing        | Polishing Lathe            | Metal                   | Fast          | 7.0              |
+| Polishing        | Vibratory Finisher         | Metal/Plastic           | Fast          | 9.0              |
+| Polishing        | Barrel Polisher            | Metal                   | Fast          | 8.5              |
+| Grinding         | Bench Grinder              | Metal/Tools             | Fast          | 8.0              |
+| Grinding         | Surface Grinder            | Metal                   | Fast          | 9.5              |
+| Grinding         | Cylindrical Grinder        | Metal                   | Fast          | 9.0              |
+| Grinding         | Centerless Grinder         | Metal                   | Fast          | 8.5              |
+| Sharpening       | Electric Sharpener         | Knives/Tools            | Fast          | 9.0              |
+| Sharpening       | Tool and Cutter Grinder    | Metal/Tools             | Fast          | 8.5              |
+| Shaping          | CNC Router                 | Wood/Plastic/Metal      | Fast          | 12.0             |
+| Shaping          | Lathe Machine              | Metal/Wood              | Fast          | 10.0             |
+| Shaping          | Milling Machine            | Metal/Plastic           | Fast          | 13.0             |
+| Shaping          | CNC Milling Machine        | Metal/Wood/Plastic      | Fast          | 15.0             |
+| Shaping          | CNC Lathe Machine          | Metal/Plastic           | Fast          | 14.0             |
+| Shaping          | Hydraulic Press Brake      | Metal                   | Fast          | 12.5             |
+| Shaping          | Injection Molding Machine  | Plastic                 | Fast          | 14.5             |
+| Welding          | MIG Welder                 | Metal                   | Fast          | 9.5              |
+| Welding          | TIG Welder                 | Metal                   | Fast          | 9.0              |
+| Welding          | Spot Welder                | Metal                   | Fast          | 10.0             |
+| Welding          | CNC Welding Machine        | Metal                   | Fast          | 14.0             |
+| Cutting          | Laser Cutter               | Metal/Plastic           | Fast          | 14.0             |
+| Cleaning         | Power Washer               | Various Surfaces        | Fast          | 12.5             |
+| Cleaning         | Ultrasonic Cleaner         | Metal/Tools             | Fast          | 13.0             |
+| Cleaning         | Industrial Vacuum          | Dust/Debris             | Fast          | 11.0             |
+| Tensioning       | Automatic Cable Tensioner  | Wire/Cable              | Fast          | 11.0             |
+| Assembling       | Power Screwdriver          | Metal/Wood              | Fast          | 10.5             |
+| Assembling       | CNC Assembly Machine       | Various                 | Fast          | 14.0             |
+| Sealing          | Pneumatic Sealant Gun      | Various                 | Fast          | 10.0             |
+| Painting         | Spray Gun                  | Various                 | Fast          | 11.5             |
+| Painting         | Powder Coating Machine     | Metal                   | Fast          | 13.5             |
+| Clamping         | Pneumatic Clamp            | Metal/Wood              | Fast          | 13.0             |
+| Lifting          | Hydraulic Lift             | Heavy Objects/Metal     | Fast          | 12.0             |
+| Lifting          | Overhead Crane             | Heavy Objects           | Fast          | 14.0             |
+| Engraving        | Laser Engraver             | Metal/Wood/Plastic      | Fast          | 10.0             |
+| Engraving        | CNC Engraving Machine      | Metal/Wood/Plastic      | Fast          | 13.0             |
+| Riveting         | Pneumatic Riveter          | Metal                   | Fast          | 9.0              |
+| Riveting         | CNC Riveting Machine       | Metal                   | Fast          | 12.0             |
 ```
 
 #
 ### Favored Machine Comparisons
-
-![Tools](https://github.com/user-attachments/assets/e80dd665-1a43-4236-945b-855053a9d365)
 
 Laser Cutter vs. Water Jet Cutter
 - Laser Cutter: Favored for cutting metals, plastics, and thin materials with high precision and minimal material wastage. Ideal for detailed work and small parts.
