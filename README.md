@@ -145,6 +145,44 @@ Optimal Factory Machine Tooling Processes
 | Riveting         | CNC Riveting Machine       | Metal                   | Fast          | 12.0             |
 ```
 
+Optimal Automated Factory Machine Tooling Processes
+
+````
+| Process          | Tool Type                  | Material Type           | Time Rating   | Efficiency Score |
+|------------------|----------------------------|-------------------------|---------------|------------------|
+| Cutting          | CNC Plasma Cutter          | Metal                   | Fast          | 15.0             |
+| Cutting          | Automated Laser Cutter     | Metal/Plastic           | Fast          | 16.0             |
+| Cutting          | Automated Water Jet Cutter | Metal/Stone/Plastic     | Fast          | 16.5             |
+| Cutting          | Robotic Arm Saw            | Wood/Plastic/Metal      | Fast          | 14.5             |
+| Drilling         | CNC Drilling Machine       | Metal/Wood/Plastic      | Fast          | 15.0             |
+| Drilling         | Automated Radial Drill     | Metal/Wood              | Fast          | 13.0             |
+| Sanding          | Robotic Sanding Machine    | Wood/Metal/Plastic      | Fast          | 13.5             |
+| Sanding          | Automated Belt Sander      | Wood/Metal              | Fast          | 14.0             |
+| Polishing        | Robotic Polishing Machine  | Metal/Plastic           | Fast          | 13.0             |
+| Polishing        | Automated Buffing Machine  | Metal                   | Fast          | 12.5             |
+| Grinding         | Automated Surface Grinder  | Metal                   | Fast          | 14.0             |
+| Grinding         | CNC Cylindrical Grinder    | Metal                   | Fast          | 13.5             |
+| Shaping          | CNC Milling Machine        | Metal/Wood/Plastic      | Fast          | 15.0             |
+| Shaping          | CNC Lathe Machine          | Metal/Plastic           | Fast          | 14.0             |
+| Shaping          | Automated Injection Molding Machine | Plastic          | Fast          | 15.0             |
+| Shaping          | CNC Router                 | Wood/Plastic/Metal      | Fast          | 14.5             |
+| Welding          | Robotic MIG Welding Machine| Metal                   | Fast          | 14.5             |
+| Welding          | Automated TIG Welder       | Metal                   | Fast          | 14.0             |
+| Cutting          | Automated Guillotine Shear | Metal/Sheet Metal       | Fast          | 14.0             |
+| Cleaning         | Automated Ultrasonic Cleaner| Metal/Tools            | Fast          | 13.5             |
+| Cleaning         | Robotic Cleaning Machine   | Various Surfaces        | Fast          | 14.0             |
+| Tensioning       | Automated Cable Tensioner  | Wire/Cable              | Fast          | 11.5             |
+| Assembling       | Robotic Assembly Machine   | Various                 | Fast          | 15.0             |
+| Sealing          | Automated Sealant Machine  | Various                 | Fast          | 13.0             |
+| Painting         | Robotic Spray Painter      | Various                 | Fast          | 14.5             |
+| Painting         | Automated Powder Coater    | Metal                   | Fast          | 14.0             |
+| Clamping         | Automated Clamping Machine | Metal/Wood              | Fast          | 13.5             |
+| Lifting          | Automated Material Handler | Heavy Objects           | Fast          | 14.5             |
+| Engraving        | CNC Laser Engraver         | Metal/Wood/Plastic      | Fast          | 14.0             |
+| Riveting         | Automated Riveting Machine | Metal                   | Fast          | 13.5             |
+| Sharpening       | Automated Tool Sharpener   | Metal Tools/Knives      | Fast          | 13.0             |
+````
+
 #
 ### Favored Machine Comparisons
 
