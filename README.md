@@ -906,7 +906,7 @@ Main Line
 
 #
 
-![Wonka](https://github.com/user-attachments/assets/b3df4f15-9342-49c2-96c0-720076c320af)
+![Assembly](https://github.com/user-attachments/assets/cfdd823c-b1ea-462b-ad10-cc1e1a155693)
 
 #
 ### Related Links
