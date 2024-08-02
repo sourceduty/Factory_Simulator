@@ -164,12 +164,12 @@ Optimal Automated Factory Machine Tooling Processes
 | Grinding         | CNC Cylindrical Grinder    | Metal                   | Fast          | 13.5             |
 | Shaping          | CNC Milling Machine        | Metal/Wood/Plastic      | Fast          | 15.0             |
 | Shaping          | CNC Lathe Machine          | Metal/Plastic           | Fast          | 14.0             |
-| Shaping          | Automated Injection Molding Machine | Plastic          | Fast          | 15.0             |
+| Shaping          | Automated Injection Mold   | Plastic                 | Fast          | 15.0             |
 | Shaping          | CNC Router                 | Wood/Plastic/Metal      | Fast          | 14.5             |
-| Welding          | Robotic MIG Welding Machine| Metal                   | Fast          | 14.5             |
+| Welding          | Robotic MIG Welding        | Metal                   | Fast          | 14.5             |
 | Welding          | Automated TIG Welder       | Metal                   | Fast          | 14.0             |
 | Cutting          | Automated Guillotine Shear | Metal/Sheet Metal       | Fast          | 14.0             |
-| Cleaning         | Automated Ultrasonic Cleaner| Metal/Tools            | Fast          | 13.5             |
+| Cleaning         | Automated Ultrasonic       | Metal/Tools            | Fast          | 13.5             |
 | Cleaning         | Robotic Cleaning Machine   | Various Surfaces        | Fast          | 14.0             |
 | Tensioning       | Automated Cable Tensioner  | Wire/Cable              | Fast          | 11.5             |
 | Assembling       | Robotic Assembly Machine   | Various                 | Fast          | 15.0             |
