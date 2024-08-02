@@ -3,6 +3,85 @@
 [Factory Simulator](https://chat.openai.com/g/g-tYRlt7b2g-factory-simulator) is designed to assist in organizing and planning the structure of industrial factories. It helps users create and optimize factory layouts and understand the intricacies of production and assembly processes through text-based diagrams. The tool offers guidance on arranging factory components efficiently, analyzing and improving existing layouts, and translating complex industrial processes into structured, easy-to-understand diagrams. This supports better visualization, decision-making, and process improvement in factory settings.
 
 #
+### Optimal Factory Tooling Processes
+
+```
+| Process          | Tool Type              | Material Type           | Time Rating   | Efficiency Score |
+|------------------|------------------------|-------------------------|---------------|------------------|
+| Cutting          | Hand Saw               | Wood                    | Moderate      | 6.0              |
+| Cutting          | Hacksaw                | Metal                   | Slow          | 3.0              |
+| Cutting          | Utility Knife          | Plastic                 | Fast          | 7.5              |
+| Cutting          | Tin Snips              | Sheet Metal             | Moderate      | 5.0              |
+| Drilling         | Hand Drill             | Plastic                 | Fast          | 12.0             |
+| Drilling         | Hand Drill             | Wood                    | Fast          | 10.0             |
+| Drilling         | Hand Drill             | Metal                   | Moderate      | 6.0              |
+| Sanding          | Sandpaper              | Wood                    | Moderate      | 4.0              |
+| Sanding          | Sandpaper              | Plastic                 | Moderate      | 4.5              |
+| Sanding          | Sandpaper              | Metal                   | Slow          | 3.0              |
+| Polishing        | Polishing Cloth        | Metal                   | Slow          | 2.4              |
+| Polishing        | Polishing Cloth        | Glass                   | Slow          | 2.0              |
+| Polishing        | Buffing Wheel          | Plastic                 | Moderate      | 5.5              |
+| Screwing         | Screwdriver            | Composite               | Moderate      | 5.0              |
+| Screwing         | Screwdriver            | Wood                    | Moderate      | 6.0              |
+| Screwing         | Screwdriver            | Metal                   | Slow          | 4.0              |
+| Assembling       | Wrench                 | Metal                   | Moderate      | 5.5              |
+| Assembling       | Hex Key Set            | Metal                   | Moderate      | 5.5              |
+| Fastening        | Pliers                 | Metal                   | Moderate      | 6.0              |
+| Fastening        | Pliers                 | Wire                    | Fast          | 8.0              |
+| Riveting         | Hand Riveter           | Metal                   | Slow          | 2.8              |
+| Riveting         | Pop Rivet Tool         | Metal                   | Moderate      | 5.5              |
+| Filing           | Hand File              | Metal                   | Slow          | 3.5              |
+| Filing           | Hand File              | Plastic                 | Moderate      | 5.0              |
+| Filing           | Hand File              | Wood                    | Slow          | 3.8              |
+| Deburring        | Deburring Tool         | Plastic                 | Fast          | 8.0              |
+| Deburring        | Deburring Tool         | Metal                   | Moderate      | 6.0              |
+| Hammering        | Hammer                 | Metal/Wood              | Fast          | 10.0             |
+| Hammering        | Mallet                 | Metal/Plastic           | Fast          | 9.0              |
+| Painting         | Brush                  | Various                 | Slow          | 3.0              |
+| Painting         | Roller                 | Wood/Wall Surface       | Moderate      | 6.5              |
+| Gluing           | Hand-held Glue Gun     | Plastic/Wood            | Moderate      | 6.0              |
+| Measuring        | Tape Measure           | Various                 | Fast          | 15.0             |
+| Measuring        | Caliper                | Metal/Plastic           | Moderate      | 10.0             |
+| Marking          | Marking Tool           | Metal/Wood              | Fast          | 12.0             |
+| Marking          | Pencil/Marker          | Various                 | Fast          | 13.0             |
+| Bending          | Hand Bending Tool      | Metal                   | Slow          | 2.5              |
+| Bending          | Pipe Bender            | Metal Pipe              | Moderate      | 4.0              |
+| Crimping         | Hand Crimper           | Wire/Metal              | Moderate      | 5.0              |
+| Punching         | Hand Punch Tool        | Metal/Plastic           | Slow          | 4.0              |
+| Engraving        | Hand Engraver          | Metal/Wood              | Moderate      | 5.5              |
+| Shaping          | Chisel                 | Wood/Stone              | Moderate      | 6.0              |
+| Shaping          | Planer                 | Wood                    | Moderate      | 5.5              |
+| Shaping          | Rasp                   | Plastic/Wood            | Slow          | 4.0              |
+| Soldering        | Soldering Iron         | Metal/Wire              | Fast          | 9.0              |
+| Soldering        | Soldering Iron         | Circuit Boards          | Moderate      | 7.0              |
+| Tapping          | Hand Tap Set           | Metal                   | Slow          | 3.0              |
+| Snapping         | Snap-on Pliers         | Metal/Wire              | Fast          | 8.5              |
+| Locking          | Locking Pliers         | Metal                   | Fast          | 9.0              |
+| Sealing          | Hand Sealant Gun       | Various                 | Moderate      | 6.0              |
+| Clamping         | C-Clamp                | Metal/Wood              | Fast          | 11.0             |
+| Trimming         | Hand Shears            | Plastic/Metal           | Fast          | 8.0              |
+| Trimming         | Wire Cutter            | Wire/Cable              | Fast          | 9.0              |
+| Tensioning       | Tensioning Tool        | Wire/Cable              | Moderate      | 7.0              |
+| Unwinding        | Hand Reel              | Wire/Cable              | Fast          | 10.0             |
+| Stripping        | Wire Stripper          | Wire                    | Fast          | 12.0             |
+| Stripping        | Paint Scraper          | Wood/Metal              | Moderate      | 6.0              |
+| Clipping         | Hand Clippers          | Metal/Plastic           | Fast          | 9.0              |
+| Weaving          | Hand Loom              | Textiles/Fibers         | Moderate      | 6.5              |
+| Stamping         | Hand Stamp Tool        | Metal/Leather           | Moderate      | 7.0              |
+| Crimping         | Bead Crimper           | Jewelry/Metal Wire      | Slow          | 4.5              |
+| Assembling       | Hand Needle            | Textiles/Fabric         | Slow          | 5.0              |
+| Tying            | Hand Tie Tool          | Wire/Bundle             | Fast          | 11.0             |
+| Lifting          | Hand Winch             | Heavy Objects/Metal     | Slow          | 3.5              |
+| Cutting          | Hand-held Circular Saw | Wood/Plastic            | Fast          | 8.5              |
+| Grinding         | Hand Grinder           | Metal/Stone             | Moderate      | 7.5              |
+| Sharpening       | Hand Sharpening Stone  | Metal Tools/Knives      | Slow          | 4.5              |
+| Welding          | Hand-held Welding Torch| Metal                   | Moderate      | 6.0              |
+| Cleaning         | Hand Scrubber          | Various Surfaces        | Moderate      | 7.0              |
+| Cleaning         | Hand Vacuum            | Dust/Debris             | Fast          | 12.0             |
+| Aligning         | Hand Level             | Various/Construction    | Fast          | 14.0             |
+```
+
+#
 ### Example Usage
 
 <details><summary>The Beer Store Production Loop</summary>
