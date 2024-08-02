@@ -5,81 +5,190 @@
 #
 ### Optimal Factory Tooling Processes
 
+Optimal Factory Hand Tooling Processes
+
 ```
-| Process          | Tool Type              | Material Type           | Time Rating   | Efficiency Score |
-|------------------|------------------------|-------------------------|---------------|------------------|
-| Cutting          | Hand Saw               | Wood                    | Moderate      | 6.0              |
-| Cutting          | Hacksaw                | Metal                   | Slow          | 3.0              |
-| Cutting          | Utility Knife          | Plastic                 | Fast          | 7.5              |
-| Cutting          | Tin Snips              | Sheet Metal             | Moderate      | 5.0              |
-| Drilling         | Hand Drill             | Plastic                 | Fast          | 12.0             |
-| Drilling         | Hand Drill             | Wood                    | Fast          | 10.0             |
-| Drilling         | Hand Drill             | Metal                   | Moderate      | 6.0              |
-| Sanding          | Sandpaper              | Wood                    | Moderate      | 4.0              |
-| Sanding          | Sandpaper              | Plastic                 | Moderate      | 4.5              |
-| Sanding          | Sandpaper              | Metal                   | Slow          | 3.0              |
-| Polishing        | Polishing Cloth        | Metal                   | Slow          | 2.4              |
-| Polishing        | Polishing Cloth        | Glass                   | Slow          | 2.0              |
-| Polishing        | Buffing Wheel          | Plastic                 | Moderate      | 5.5              |
-| Screwing         | Screwdriver            | Composite               | Moderate      | 5.0              |
-| Screwing         | Screwdriver            | Wood                    | Moderate      | 6.0              |
-| Screwing         | Screwdriver            | Metal                   | Slow          | 4.0              |
-| Assembling       | Wrench                 | Metal                   | Moderate      | 5.5              |
-| Assembling       | Hex Key Set            | Metal                   | Moderate      | 5.5              |
-| Fastening        | Pliers                 | Metal                   | Moderate      | 6.0              |
-| Fastening        | Pliers                 | Wire                    | Fast          | 8.0              |
-| Riveting         | Hand Riveter           | Metal                   | Slow          | 2.8              |
-| Riveting         | Pop Rivet Tool         | Metal                   | Moderate      | 5.5              |
-| Filing           | Hand File              | Metal                   | Slow          | 3.5              |
-| Filing           | Hand File              | Plastic                 | Moderate      | 5.0              |
-| Filing           | Hand File              | Wood                    | Slow          | 3.8              |
-| Deburring        | Deburring Tool         | Plastic                 | Fast          | 8.0              |
-| Deburring        | Deburring Tool         | Metal                   | Moderate      | 6.0              |
-| Hammering        | Hammer                 | Metal/Wood              | Fast          | 10.0             |
-| Hammering        | Mallet                 | Metal/Plastic           | Fast          | 9.0              |
-| Painting         | Brush                  | Various                 | Slow          | 3.0              |
-| Painting         | Roller                 | Wood/Wall Surface       | Moderate      | 6.5              |
-| Gluing           | Hand-held Glue Gun     | Plastic/Wood            | Moderate      | 6.0              |
-| Measuring        | Tape Measure           | Various                 | Fast          | 15.0             |
-| Measuring        | Caliper                | Metal/Plastic           | Moderate      | 10.0             |
-| Marking          | Marking Tool           | Metal/Wood              | Fast          | 12.0             |
-| Marking          | Pencil/Marker          | Various                 | Fast          | 13.0             |
-| Bending          | Hand Bending Tool      | Metal                   | Slow          | 2.5              |
-| Bending          | Pipe Bender            | Metal Pipe              | Moderate      | 4.0              |
-| Crimping         | Hand Crimper           | Wire/Metal              | Moderate      | 5.0              |
-| Punching         | Hand Punch Tool        | Metal/Plastic           | Slow          | 4.0              |
-| Engraving        | Hand Engraver          | Metal/Wood              | Moderate      | 5.5              |
-| Shaping          | Chisel                 | Wood/Stone              | Moderate      | 6.0              |
-| Shaping          | Planer                 | Wood                    | Moderate      | 5.5              |
-| Shaping          | Rasp                   | Plastic/Wood            | Slow          | 4.0              |
-| Soldering        | Soldering Iron         | Metal/Wire              | Fast          | 9.0              |
-| Soldering        | Soldering Iron         | Circuit Boards          | Moderate      | 7.0              |
-| Tapping          | Hand Tap Set           | Metal                   | Slow          | 3.0              |
-| Snapping         | Snap-on Pliers         | Metal/Wire              | Fast          | 8.5              |
-| Locking          | Locking Pliers         | Metal                   | Fast          | 9.0              |
-| Sealing          | Hand Sealant Gun       | Various                 | Moderate      | 6.0              |
-| Clamping         | C-Clamp                | Metal/Wood              | Fast          | 11.0             |
-| Trimming         | Hand Shears            | Plastic/Metal           | Fast          | 8.0              |
-| Trimming         | Wire Cutter            | Wire/Cable              | Fast          | 9.0              |
-| Tensioning       | Tensioning Tool        | Wire/Cable              | Moderate      | 7.0              |
-| Unwinding        | Hand Reel              | Wire/Cable              | Fast          | 10.0             |
-| Stripping        | Wire Stripper          | Wire                    | Fast          | 12.0             |
-| Stripping        | Paint Scraper          | Wood/Metal              | Moderate      | 6.0              |
-| Clipping         | Hand Clippers          | Metal/Plastic           | Fast          | 9.0              |
-| Weaving          | Hand Loom              | Textiles/Fibers         | Moderate      | 6.5              |
-| Stamping         | Hand Stamp Tool        | Metal/Leather           | Moderate      | 7.0              |
-| Crimping         | Bead Crimper           | Jewelry/Metal Wire      | Slow          | 4.5              |
-| Assembling       | Hand Needle            | Textiles/Fabric         | Slow          | 5.0              |
-| Tying            | Hand Tie Tool          | Wire/Bundle             | Fast          | 11.0             |
-| Lifting          | Hand Winch             | Heavy Objects/Metal     | Slow          | 3.5              |
-| Cutting          | Hand-held Circular Saw | Wood/Plastic            | Fast          | 8.5              |
-| Grinding         | Hand Grinder           | Metal/Stone             | Moderate      | 7.5              |
-| Sharpening       | Hand Sharpening Stone  | Metal Tools/Knives      | Slow          | 4.5              |
-| Welding          | Hand-held Welding Torch| Metal                   | Moderate      | 6.0              |
-| Cleaning         | Hand Scrubber          | Various Surfaces        | Moderate      | 7.0              |
-| Cleaning         | Hand Vacuum            | Dust/Debris             | Fast          | 12.0             |
-| Aligning         | Hand Level             | Various/Construction    | Fast          | 14.0             |
+| Process          | Tool Type                | Material Type           | Time Rating   | Efficiency Score |
+|------------------|--------------------------|-------------------------|---------------|------------------|
+| Cutting          | Hand Saw                 | Wood                    | Moderate      | 6.0              |
+| Cutting          | Hacksaw                  | Metal                   | Slow          | 3.0              |
+| Cutting          | Utility Knife            | Plastic                 | Fast          | 7.5              |
+| Cutting          | Tin Snips                | Sheet Metal             | Moderate      | 5.0              |
+| Drilling         | Hand Drill               | Plastic                 | Fast          | 12.0             |
+| Drilling         | Hand Drill               | Wood                    | Fast          | 10.0             |
+| Drilling         | Hand Drill               | Metal                   | Moderate      | 6.0              |
+| Sanding          | Sandpaper                | Wood                    | Moderate      | 4.0              |
+| Sanding          | Sandpaper                | Plastic                 | Moderate      | 4.5              |
+| Sanding          | Sandpaper                | Metal                   | Slow          | 3.0              |
+| Polishing        | Polishing Cloth          | Metal                   | Slow          | 2.4              |
+| Polishing        | Polishing Cloth          | Glass                   | Slow          | 2.0              |
+| Polishing        | Buffing Wheel            | Plastic                 | Moderate      | 5.5              |
+| Screwing         | Screwdriver              | Composite               | Moderate      | 5.0              |
+| Screwing         | Screwdriver              | Wood                    | Moderate      | 6.0              |
+| Screwing         | Screwdriver              | Metal                   | Slow          | 4.0              |
+| Assembling       | Wrench                   | Metal                   | Moderate      | 5.5              |
+| Assembling       | Hex Key Set              | Metal                   | Moderate      | 5.5              |
+| Fastening        | Pliers                   | Metal                   | Moderate      | 6.0              |
+| Fastening        | Pliers                   | Wire                    | Fast          | 8.0              |
+| Riveting         | Hand Riveter             | Metal                   | Slow          | 2.8              |
+| Riveting         | Pop Rivet Tool           | Metal                   | Moderate      | 5.5              |
+| Filing           | Hand File                | Metal                   | Slow          | 3.5              |
+| Filing           | Hand File                | Plastic                 | Moderate      | 5.0              |
+| Filing           | Hand File                | Wood                    | Slow          | 3.8              |
+| Deburring        | Deburring Tool           | Plastic                 | Fast          | 8.0              |
+| Deburring        | Deburring Tool           | Metal                   | Moderate      | 6.0              |
+| Hammering        | Hammer                   | Metal/Wood              | Fast          | 10.0             |
+| Hammering        | Mallet                   | Metal/Plastic           | Fast          | 9.0              |
+| Painting         | Brush                    | Various                 | Slow          | 3.0              |
+| Painting         | Roller                   | Wood/Wall Surface       | Moderate      | 6.5              |
+| Gluing           | Hand-held Glue Gun       | Plastic/Wood            | Moderate      | 6.0              |
+| Measuring        | Tape Measure             | Various                 | Fast          | 15.0             |
+| Measuring        | Caliper                  | Metal/Plastic           | Moderate      | 10.0             |
+| Marking          | Marking Tool             | Metal/Wood              | Fast          | 12.0             |
+| Marking          | Pencil/Marker            | Various                 | Fast          | 13.0             |
+| Bending          | Hand Bending Tool        | Metal                   | Slow          | 2.5              |
+| Bending          | Pipe Bender              | Metal Pipe              | Moderate      | 4.0              |
+| Crimping         | Hand Crimper             | Wire/Metal              | Moderate      | 5.0              |
+| Punching         | Hand Punch Tool          | Metal/Plastic           | Slow          | 4.0              |
+| Engraving        | Hand Engraver            | Metal/Wood              | Moderate      | 5.5              |
+| Shaping          | Chisel                   | Wood/Stone              | Moderate      | 6.0              |
+| Shaping          | Planer                   | Wood                    | Moderate      | 5.5              |
+| Shaping          | Rasp                     | Plastic/Wood            | Slow          | 4.0              |
+| Soldering        | Soldering Iron           | Metal/Wire              | Fast          | 9.0              |
+| Soldering        | Soldering Iron           | Circuit Boards          | Moderate      | 7.0              |
+| Tapping          | Hand Tap Set             | Metal                   | Slow          | 3.0              |
+| Snapping         | Snap-on Pliers           | Metal/Wire              | Fast          | 8.5              |
+| Locking          | Locking Pliers           | Metal                   | Fast          | 9.0              |
+| Sealing          | Hand Sealant Gun         | Various                 | Moderate      | 6.0              |
+| Clamping         | C-Clamp                  | Metal/Wood              | Fast          | 11.0             |
+| Trimming         | Hand Shears              | Plastic/Metal           | Fast          | 8.0              |
+| Trimming         | Wire Cutter              | Wire/Cable              | Fast          | 9.0              |
+| Tensioning       | Tensioning Tool          | Wire/Cable              | Moderate      | 7.0              |
+| Unwinding        | Hand Reel                | Wire/Cable              | Fast          | 10.0             |
+| Stripping        | Wire Stripper            | Wire                    | Fast          | 12.0             |
+| Stripping        | Paint Scraper            | Wood/Metal              | Moderate      | 6.0              |
+| Clipping         | Hand Clippers            | Metal/Plastic           | Fast          | 9.0              |
+| Weaving          | Hand Loom                | Textiles/Fibers         | Moderate      | 6.5              |
+| Stamping         | Hand Stamp Tool          | Metal/Leather           | Moderate      | 7.0              |
+| Crimping         | Bead Crimper             | Jewelry/Metal Wire      | Slow          | 4.5              |
+| Assembling       | Hand Needle              | Textiles/Fabric         | Slow          | 5.0              |
+| Tying            | Hand Tie Tool            | Wire/Bundle             | Fast          | 11.0             |
+| Lifting          | Hand Winch               | Heavy Objects/Metal     | Slow          | 3.5              |
+| Cutting          | Hand-held Circular Saw   | Wood/Plastic            | Fast          | 8.5              |
+| Grinding         | Hand Grinder             | Metal/Stone             | Moderate      | 7.5              |
+| Sharpening       | Hand Sharpening Stone    | Metal Tools/Knives      | Slow          | 4.5              |
+| Welding          | Hand-held Welding Torch  | Metal                   | Moderate      | 6.0              |
+| Cleaning         | Hand Scrubber            | Various Surfaces        | Moderate      | 7.0              |
+| Cleaning         | Hand Vacuum              | Dust/Debris             | Fast          | 12.0             |
+| Aligning         | Hand Level               | Various/Construction    | Fast          | 14.0             |
 ```
+
+Optimal Factory Machine Tooling Processes
+
+```
+| Process          | Tool Type                | Material Type           | Time Rating   | Efficiency Score |
+|------------------|--------------------------|-------------------------|---------------|------------------|
+| Cutting          | Hand-held Circular Saw   | Wood/Plastic            | Fast          | 8.5              |
+| Cutting          | Band Saw                 | Metal/Wood              | Fast          | 9.0              |
+| Cutting          | Table Saw                | Wood/Plastic            | Fast          | 9.5              |
+| Cutting          | Angle Grinder            | Metal/Stone             | Fast          | 8.0              |
+| Cutting          | Laser Cutter             | Metal/Plastic           | Fast          | 14.0             |
+| Cutting          | Water Jet Cutter         | Metal/Stone/Plastic     | Fast          | 14.5             |
+| Cutting          | Plasma Cutter            | Metal                   | Fast          | 13.0             |
+| Cutting          | CNC Plasma Cutter        | Metal                   | Fast          | 15.0             |
+| Cutting          | Guillotine Shear         | Metal/Sheet Metal       | Fast          | 13.5             |
+| Drilling         | Drill Press              | Metal/Wood              | Fast          | 14.0             |
+| Drilling         | CNC Drill Machine        | Metal/Wood/Plastic      | Fast          | 15.0             |
+| Drilling         | Radial Drill Machine     | Metal/Wood              | Fast          | 12.5             |
+| Sanding          | Belt Sander              | Wood/Metal              | Fast          | 8.0              |
+| Sanding          | Orbital Sander           | Wood/Plastic            | Fast          | 7.5              |
+| Sanding          | Disc Sander              | Metal/Wood              | Fast          | 8.5              |
+| Sanding          | Drum Sander              | Wood                    | Fast          | 8.0              |
+| Sanding          | Wide Belt Sander         | Wood                    | Fast          | 9.0              |
+| Polishing        | Buffing Wheel            | Plastic                 | Moderate      | 5.5              |
+| Polishing        | Polishing Lathe          | Metal                   | Fast          | 7.0              |
+| Polishing        | Vibratory Finisher       | Metal/Plastic           | Fast          | 9.0              |
+| Polishing        | Barrel Polisher          | Metal                   | Fast          | 8.5              |
+| Grinding         | Bench Grinder            | Metal/Tools             | Fast          | 8.0              |
+| Grinding         | Surface Grinder          | Metal                   | Fast          | 9.5              |
+| Grinding         | Cylindrical Grinder      | Metal                   | Fast          | 9.0              |
+| Grinding         | Centerless Grinder       | Metal                   | Fast          | 8.5              |
+| Sharpening       | Electric Sharpener       | Knives/Tools            | Fast          | 9.0              |
+| Sharpening       | Tool and Cutter Grinder  | Metal/Tools             | Fast          | 8.5              |
+| Shaping          | CNC Router               | Wood/Plastic/Metal      | Fast          | 12.0             |
+| Shaping          | Lathe Machine            | Metal/Wood              | Fast          | 10.0             |
+| Shaping          | Milling Machine          | Metal/Plastic           | Fast          | 13.0             |
+| Shaping          | CNC Milling Machine      | Metal/Wood/Plastic      | Fast          | 15.0             |
+| Shaping          | CNC Lathe Machine        | Metal/Plastic           | Fast          | 14.0             |
+| Shaping          | Hydraulic Press Brake    | Metal                   | Fast          | 12.5             |
+| Shaping          | Injection Molding Machine| Plastic                 | Fast          | 14.5             |
+| Welding          | MIG Welder               | Metal                   | Fast          | 9.5              |
+| Welding          | TIG Welder               | Metal                   | Fast          | 9.0              |
+| Welding          | Spot Welder              | Metal                   | Fast          | 10.0             |
+| Welding          | CNC Welding Machine      | Metal                   | Fast          | 14.0             |
+| Cutting          | Laser Cutter             | Metal/Plastic           | Fast          | 14.0             |
+| Cleaning         | Power Washer             | Various Surfaces        | Fast          | 12.5             |
+| Cleaning         | Ultrasonic Cleaner       | Metal/Tools             | Fast          | 13.0             |
+| Cleaning         | Industrial Vacuum        | Dust/Debris             | Fast          | 11.0             |
+| Tensioning       | Automatic Cable Tensioner| Wire/Cable              | Fast          | 11.0             |
+| Assembling       | Power Screwdriver        | Metal/Wood              | Fast          | 10.5             |
+| Assembling       | CNC Assembly Machine     | Various                 | Fast          | 14.0             |
+| Sealing          | Pneumatic Sealant Gun    | Various                 | Fast          | 10.0             |
+| Painting         | Spray Gun                | Various                 | Fast          | 11.5             |
+| Painting         | Powder Coating Machine   | Metal                   | Fast          | 13.5             |
+| Clamping         | Pneumatic Clamp          | Metal/Wood              | Fast          | 13.0             |
+| Lifting          | Hydraulic Lift           | Heavy Objects/Metal     | Fast          | 12.0             |
+| Lifting          | Overhead Crane           | Heavy Objects           | Fast          | 14.0             |
+| Engraving        | Laser Engraver           | Metal/Wood/Plastic      | Fast          | 10.0             |
+| Engraving        | CNC Engraving Machine    | Metal/Wood/Plastic      | Fast          | 13.0             |
+| Riveting         | Pneumatic Riveter        | Metal                   | Fast          | 9.0              |
+| Riveting         | CNC Riveting Machine     | Metal                   | Fast          | 12.0             |
+```
+
+#
+### Favored Machine Comparisons
+
+![Tools](https://github.com/user-attachments/assets/e80dd665-1a43-4236-945b-855053a9d365)
+
+Laser Cutter vs. Water Jet Cutter
+- Laser Cutter: Favored for cutting metals, plastics, and thin materials with high precision and minimal material wastage. Ideal for detailed work and small parts.
+- Water Jet Cutter: Preferred for cutting thicker materials, including metals, stone, and composites, without generating heat that could affect the material properties. Chosen for materials sensitive to high temperatures.
+
+MIG Welder vs. TIG Welder
+- MIG Welder: Used for faster welding tasks, especially on thicker materials or when speed and ease of use are priorities. Commonly used for welding steel and aluminum.
+- TIG Welder: Selected for high-precision welding tasks, especially on thinner materials or when the quality of the weld is critical. Often used for stainless steel, aluminum, and other non-ferrous metals.
+
+CNC Milling Machine vs. Lathe Machine
+- CNC Milling Machine: Favored for creating complex shapes and precise parts with multiple axes of movement. Used for parts that require detailed cutting, drilling, and shaping from various angles.
+- Lathe Machine: Preferred when the task involves cylindrical or symmetrical objects. Ideal for turning, threading, and tapering tasks.
+
+Band Saw vs. Table Saw
+- Band Saw: Chosen for cutting irregular shapes, curved lines, or resawing tasks. Ideal for cutting thicker materials where straightness isn’t the main concern.
+- Table Saw: Favored for making precise, straight cuts, especially in woodworking. Ideal for tasks that require cutting large sheets of material into smaller, straight pieces.
+
+Belt Sander vs. Orbital Sander
+- Belt Sander: Used for heavy-duty sanding tasks where large amounts of material need to be removed quickly. Preferred for flattening rough surfaces and sanding large, flat areas.
+- Orbital Sander: Favored for finer finishing tasks where a smoother finish is required. Ideal for preparing surfaces for painting or finishing and for delicate materials.
+
+Drill Press vs. Radial Drill Machine
+- Drill Press: Chosen for making precise vertical holes in a fixed position, ideal for repetitive tasks with uniform holes in materials like metal or wood.
+- Radial Drill Machine: Preferred when there’s a need to drill holes in large or awkwardly shaped pieces. Offers more flexibility in positioning the drill over the workpiece.
+
+Surface Grinder vs. Cylindrical Grinder
+- Surface Grinder: Used for creating a smooth, flat surface on a workpiece. Favored for precise flat grinding tasks.
+- Cylindrical Grinder: Preferred for grinding the outside of a cylindrical object. Used to achieve precise roundness and fine finishes on cylindrical parts.
+
+Spray Gun vs. Powder Coating Machine
+- Spray Gun: Favored for applying liquid paints and coatings on a variety of surfaces. Versatile and can be used for detailed and intricate painting tasks.
+- Powder Coating Machine: Preferred for applying a durable, high-quality finish on metal parts. Ideal for industrial applications where durability and resistance to wear are critical.
+
+Power Screwdriver vs. CNC Assembly Machine
+- Power Screwdriver: Used for manual assembly tasks where flexibility and operator control are required. Ideal for tasks with varying screw sizes and materials.
+- CNC Assembly Machine: Favored for automated assembly processes where consistency, speed, and precision are required. Used in mass production environments.
+
+Overhead Crane vs. Hydraulic Lift
+- Overhead Crane: Preferred for moving extremely heavy objects across long distances within a factory. Ideal for handling large, bulky items like machinery and raw materials.
+- Hydraulic Lift: Favored for lifting and moving heavy objects vertically in smaller spaces. Commonly used for maintenance, repair, and assembly tasks where vertical movement is essential.
 
 #
 ### Example Usage
