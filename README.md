@@ -1,4 +1,4 @@
-![Humanoid](https://github.com/user-attachments/assets/defbcbc3-a14e-4d0d-95c8-fd6a5b7138c6)
+![Factory Humanoid](https://github.com/user-attachments/assets/02bd8933-56c1-4b36-9f57-8259360f83ac)
 
 > Industrial factory process structure diagram simulator.
 
