@@ -237,67 +237,41 @@ Overhead Crane vs. Hydraulic Lift
 The Beer Store production loop incorporates a sustainable approach by integrating the return, inspection, and reuse or recycling of glass bottles. This process begins with the collection of returned bottles, which are then subjected to a rigorous inspection and sorting process. Reusable bottles are washed, sterilized, and re-entered into the beer bottling line, effectively reducing the demand for new glass production and minimizing waste. Bottles that fail the quality inspection are not discarded; instead, they are processed in a material recycling stream where they are converted back into raw glass material. This recycled glass then re-enters the production loop, either being formed into new bottles or utilized in other glass products. This circular production system not only ensures the efficient use of resources but also lessens the environmental impact by cutting down on waste and the need for new raw materials. The entire process is tightly integrated, from brewing and bottling to distribution, ensuring a consistent and sustainable operation that supports both environmental objectives and the business's bottom line.
 
 ```
-                             +--------------------------------------+
-                             |                                      |
-                             |       Returned Bottle Collection     |
-                             |                                      |
-                             +-------------------+------------------+
-                                                 |
-                                                 v
-                                  +--------------+--------------+
-                                  |   Bottle Inspection &       |
-                                  |     Sorting Process         |
-                                  +--------------+--------------+
-                                                 |
-                                                 v
-                              (Reusable)        / \       (Recycling)
-                            +---------+        /   \        +---------+
-                            |         |       /     \       |         |
-                            | Bottle  |     /       \       | Material |
-                            | Washing |<---+         +----->| Recycle  |
-                            | &       |       Fail          | Process  |
-                            | Reuse   |                     |         |
-                            |         |                     |         |
-                            +---------+                     +---------+
-                                  |                                |
-                                  |                                |
-                                  v                                v
-+---------+------------+    +---------+-------------+     +---------+------------+
-|  Glass Manufacturing  |   |  Raw Material Input   |     |  Glass Manufacturing  |
-+----------+------------+   +----------+------------+     +----------+-----------+
-           |                             |                             |
-           v                             v                             v
-+----------+------------+   +----------+------------+   +----------+------------+
-|  Bottle Washing &     |   |  Bottle Washing &     |   |  Bottle Washing &     |
-|     Sterilization     |   |     Sterilization     |   |     Sterilization     |
-+----------+------------+   +----------+------------+   +----------+------------+
-           |                             |                             |
-           v                             v                             v
-+----------+------------+   +----------+------------+   +----------+------------+
-|   Beer Brewing and    |   |   Beer Brewing and    |   |   Beer Brewing and    |
-|     Mixing Process    |   |     Mixing Process    |   |     Mixing Process    |
-+----------+------------+   +----------+------------+   +----------+------------+
-           |                             |                             |
-           v                             v                             v
-+----------+------------+   +----------+------------+   +----------+------------+
-|   Beer Bottling &     |   |   Beer Bottling &     |   |   Beer Bottling &     |
-|      Capping          |   |      Capping          |   |      Capping          |
-+----------+------------+   +----------+------------+   +----------+------------+
-           |                             |                             |
-           v                             v                             v
-+----------+------------+   +----------+------------+   +----------+------------+
-|  Labeling & Packaging |   |  Labeling & Packaging |   |  Labeling & Packaging |
-+----------+------------+   +----------+------------+   +----------+------------+
-           |                             |                             |
-           v                             v                             v
-+----------+------------+   +----------+------------+   +----------+------------+
-|   Quality Control     |   |   Quality Control     |   |   Quality Control     |
-+----------+------------+   +----------+------------+   +----------+------------+
-           |                             |                             |
-           v                             v                             v
-+----------+------------+   +----------+------------+   +----------+------------+
-|    Distribution       |   |    Distribution       |   |    Distribution       |
-+-----------------------+   +-----------------------+   +-----------------------+
+                   +--------------------+
+                   |  Bottle Collection |
+                   +--------------------+
+                             |
+                             v
+                   +--------------------+
+                   |  Inspection &      |
+                   |  Sorting           |
+                   +--------------------+
+                             |
+         +-------------------+-----------------+
+         |                                     |
+         v                                     v
++---------------------+              +--------------------+
+| Reusable Bottles    |              | Failed Quality     |
+|                     |              | Bottles            |
+|                     |              +--------------------+
+|  +-------------+    |                         |
+|  | Washing &   |    |                         v
+|  | Sterilizing |    |              +---------------------+
+|  +-------------+    |              |  Material Recycling |
+|                     |              |  & Raw Glass        |
+|  +--------------+   |              |  Processing         |
+|  | Re-enter     |   |              +---------------------+
+|  | Bottling Line|   |                         |
+|  +--------------+   |                         v
++---------------------+              +--------------------+
+          |                          |  Recycled Glass    |
+          |                          |  Re-entered        |
+          v                          +--------------------+
++--------------------+                          |
+|  Distribution      |                          v
++--------------------+               +--------------------+
+                                     |  New Bottles       |
+                                     +--------------------+
 ```
 
 <br>    
