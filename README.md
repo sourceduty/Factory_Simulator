@@ -1,4 +1,8 @@
-![Factory](https://github.com/sourceduty/Factory_Simulator/assets/123030236/e53ad148-7229-456f-9702-cd53bce6e110)
+![Humanoid](https://github.com/user-attachments/assets/defbcbc3-a14e-4d0d-95c8-fd6a5b7138c6)
+
+> Industrial factory process structure diagram simulator.
+
+#
 
 [Factory Simulator](https://chat.openai.com/g/g-tYRlt7b2g-factory-simulator) is designed to assist in organizing and planning the structure of industrial factories. It helps users create and optimize factory layouts and understand the intricacies of production and assembly processes through text-based diagrams. The tool offers guidance on arranging factory components efficiently, analyzing and improving existing layouts, and translating complex industrial processes into structured, easy-to-understand diagrams. This supports better visualization, decision-making, and process improvement in factory settings.
 
