@@ -412,24 +412,40 @@ This layout focuses on a streamlined flow from component fabrication through to 
 <br>
 
 ```
-
 Entrance
-   |
-   V
-[Raw Material Storage] ---> [Component Storage]
-   |                              |
-   V                              V
-[PCB Manufacturing]       [Component Manufacturing]
-   |                              |
-   V                              V
-[PCB Testing]  <-------  [Component Assembly]
-   |                              |
-   V                              V
-[Finished Goods Storage] ---> [Quality Control]
-   |                              |
-   V                              V
-  Shipping  <-------------------  Packaging
-
+|
+V
+[Raw Material Storage] 
+|
+V
+[PCB Manufacturing]  
+|
+V
+[PCB Testing] 
+|
+V
+[Finished Goods Storage] 
+|
+V
+Shipping 
+|
+V
+[Component Storage]
+|
+V
+[Component Manufacturing]
+|
+V
+[Component Assembly]
+|
+V
+[Quality Control]
+|
+V
+[Packaging]
+|
+V
+Shipping
 ```
 
 This factory is meticulously designed to streamline the production of PCBs and their associated components, optimizing efficiency and quality control throughout the manufacturing process. The layout features a logical flow beginning with the Raw Material Storage, strategically positioned near the entrance for easy access. Raw materials move seamlessly to PCB and Component Manufacturing areas, each equipped with specialized processes like cutting, drilling, etching, and molding. The factory's central hub, the Component Assembly area, efficiently integrates tested PCBs and components, facilitating smooth operations. Quality Control and Packaging stations are strategically placed near Finished Goods Storage, ensuring that only the highest quality products are dispatched. By incorporating lean manufacturing principles, automation, and continuous workflow analysis, the factory not only minimizes waste but also maximizes productivity and product quality. This design supports a cohesive production environment, ensuring timely delivery and customer satisfaction.
@@ -441,17 +457,37 @@ This factory is meticulously designed to streamline the production of PCBs and t
 <br>
 
 ```
-
-[Return Center] --> [Can Crusher] --> [Aluminum Melter] --> [Can Molding Machine] --> [Cooling Station] --> [Quality Check]
-      |                                                                                                       |
-      v                                                                                                       v
-[Recycling Bin] --> [Non-Aluminum Separator]                                              [Defective Can Recycle Path] --> [Can Crusher]
-
-[Quality Check] --> [Printing and Labeling] --> [Filling Station] --> [Sealing Machine] --> [Cooling Conveyor]
-                                                                                                         |
-                                                                                                         v
-                                                                                                    [Storage]
-
+[Return Center]
+   │
+   ▼
+[Can Crusher]
+   │
+   ▼
+[Aluminum Melter]
+   │
+   ▼
+[Can Molding Machine]
+   │
+   ▼
+[Cooling Station]
+   │
+   ▼
+[Quality Check] ──► [Defective Can Recycle Path] ──► [Can Crusher]
+   │
+   ▼
+[Printing and Labeling]
+   │
+   ▼
+[Filling Station]
+   │
+   ▼
+[Sealing Machine]
+   │
+   ▼
+[Cooling Conveyor]
+   │
+   ▼
+[Storage]
 ```
 
 This conceptual soda can manufacturing and dispensing factory represents a leap forward in sustainable vending technology. This closed-loop system efficiently recycles returned aluminum cans into fresh, ready-to-drink soda cans, significantly reducing waste and resource consumption. The process begins when customers return empty cans through the return center, where they are then crushed and melted down to form raw aluminum. This aluminum is molded into new cans, cooled, and subjected to rigorous quality checks to ensure defect-free production. Approved cans are printed, labeled, filled with soda, sealed, and cooled again before being stored for dispensing. By integrating recycling directly into the vending machine, this factory system minimizes the environmental impact associated with traditional soda vending machines and aluminum can manufacturing.
@@ -526,47 +562,46 @@ Closed product lifecycles aren't always possible because as some companies grow,
 The Automation Pyramid is a structured framework used to visualize the different layers of automation within a manufacturing environment. Starting from the bottom, Level 0 consists of field devices like sensors and actuators that directly interact with the production processes. Moving up, Level 1 involves basic controls through Programmable Logic Controllers (PLCs) which manage specific machines or processes. Level 2 extends this control through a more integrated approach using PLCs and Distributed Control Systems (DCS) to synchronize operations across several machines. At Level 3, supervisory control systems provide crucial interfaces for human operators, offering real-time operational data and control capabilities. The fourth level focuses on operations management, utilizing Manufacturing Execution Systems (MES) to optimize production schedules, manage inventory, and ensure quality. The apex of the pyramid, Level 5, integrates all operational data into Enterprise Resource Planning (ERP) systems, facilitating broad strategic management across the entire organization. This pyramid effectively illustrates how data and control flow upward through increasingly sophisticated systems, enabling comprehensive and integrated factory automation.
 
 ```
-                                  ┌────────────┐
-                                  │ Level 5:   │
-                                  │ Enterprise │
-                                  │ Management │
-                                  └────────────┘
-                                         │
-                                         ▼
-                                  ┌────────────┐
-                                  │ Level 4:   │
-                                  │ Operations │
-                                  │ Management │
-                                  └────────────┘
-                                         │
-                                         ▼
-                                  ┌────────────┐
-                                  │ Level 3:   │
-                                  │ Supervisory│
-                                  │ Control    │
-                                  └────────────┘
-                                         │
-                                         ▼
-                                  ┌────────────┐
-                                  │ Level 2:   │
-                                  │ Control    │
-                                  │ (PLCs/DCS) │
-                                  └────────────┘
-                                         │
-                                         ▼
-                                  ┌────────────┐
-                                  │ Level 1:   │
-                                  │ Sensing &  │
-                                  │ Actuation  │
-                                  └────────────┘
-                                         │
-                                         ▼
-                                  ┌────────────┐
-                                  │ Level 0:   │
-                                  │ Field      │
-                                  │ Devices    │
-                                  └────────────┘
-
+┌────────────┐
+│ Level 5:   │
+│ Enterprise │
+│ Management │
+└────────────┘
+	 │
+	 ▼
+┌────────────┐
+│ Level 4:   │
+│ Operations │
+│ Management │
+└────────────┘
+	 │
+	 ▼
+┌────────────┐
+│ Level 3:   │
+│ Supervisory│
+│ Control    │
+└────────────┘
+	 │
+	 ▼
+┌────────────┐
+│ Level 2:   │
+│ Control    │
+│ (PLCs/DCS) │
+└────────────┘
+	 │
+	 ▼
+┌────────────┐
+│ Level 1:   │
+│ Sensing &  │
+│ Actuation  │
+└────────────┘
+	 │
+	 ▼
+┌────────────┐
+│ Level 0:   │
+│ Field      │
+│ Devices    │
+└────────────┘
 ```
 
 <br>    
