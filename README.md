@@ -925,5 +925,9 @@ Main Line
 <br>
 [Process](https://github.com/sourceduty/Process)
 
+#
+
+![Stooge](https://github.com/user-attachments/assets/84512ace-115a-46bc-bdba-f3b7ff93ddaf)
+
 ***
 Copyright (C) 2024, Sourceduty - All Rights Reserved.
