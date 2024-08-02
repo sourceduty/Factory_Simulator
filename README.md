@@ -3,7 +3,7 @@
 [Factory Simulator](https://chat.openai.com/g/g-tYRlt7b2g-factory-simulator) is designed to assist in organizing and planning the structure of industrial factories. It helps users create and optimize factory layouts and understand the intricacies of production and assembly processes through text-based diagrams. The tool offers guidance on arranging factory components efficiently, analyzing and improving existing layouts, and translating complex industrial processes into structured, easy-to-understand diagrams. This supports better visualization, decision-making, and process improvement in factory settings.
 
 #
-### Examples Usage
+### Example Usage
 
 <details><summary>The Beer Store Production Loop</summary>
 <br>
