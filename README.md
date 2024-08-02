@@ -309,21 +309,28 @@ The Beer Store production loop incorporates a sustainable approach by integratin
 Below is an example of a simple production line for assembling a small electronic device, such as a smartphone. This diagram will illustrate the flow from receiving raw materials to the final packaging stage using plain text symbols and structure.
 
 ```
-+-------------------+    +-------------------+    +-------------------+    +-------------------+    +-------------------+
-| 1. Raw Material   | -> | 2. Component      | -> | 3. Assembly        | -> | 4. Quality        | -> | 5. Packaging      |
-|   Storage         |    |   Preparation     |    |   Station          |    |   Control         |    |   and Shipping    |
-+-------------------+    +-------------------+    +-------------------+    +-------------------+    +-------------------+
-        |                     |                        |                        |                        |
-        |                     |                        |                        |                        |
-        v                     v                        v                        v                        v
-+-------------------+    +-------------------+    +-------------------+    +-------------------+    +-------------------+
-| - Warehouse for   |    | - SMD placement   |    | - Manual or       |    | - Visual and      |    | - Final product   |
-|   storing         |    | - Soldering       |    |   automated       |    |   functional      |    |   boxing         |
-|   components      |    | - PCB testing     |    |   assembly of     |    |   inspections     |    | - Labeling and   |
-| - FIFO system     |    |                   |    |   components      |    | - Testing         |    |   barcoding      |
-|                   |    |                   |    | - Integration of  |    |   equipment       |    | - Ready for      |
-|                   |    |                   |    |   software        |    |                   |    |   distribution   |
-+-------------------+    +-------------------+    +-------------------+    +-------------------+    +-------------------+
+Assembly Line
+
+|-- Raw Material Storage
+|   - Warehouse for storing components
+|   - FIFO system to manage inventory
+|
+|-- Component Preparation
+|   - SMD placement and soldering
+|   - PCB testing
+|
+|-- Assembly Station
+|   - Assembly of components
+|   - Integration of software
+|
+|-- Quality Control
+|   - Visual and functional inspections
+|   - Testing equipment
+|
+|-- Packaging and Shipping
+    - Final product boxing
+    - Labeling and barcoding
+    - Ready for distribution
 ```
 
 1. Raw Material Storage: This is the starting point where all necessary components and raw materials are stored. Using a First In, First Out (FIFO) system ensures that older stock is used first to prevent material aging.
