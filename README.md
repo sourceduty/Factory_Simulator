@@ -913,6 +913,256 @@ Main Line
 <br>    
 </details>
 
+<details><summary>Automated Automotive Assembly Line Simulation Example</summary>
+<br>
+
+This manufacturing process simulation models the entire production workflow of a vehicle, from raw material handling to final assembly and quality control, incorporating detailed stages and realistic elements such as worker assignments, tool usage, and error handling. Each stage of the process, such as Chassis Assembly, Engine Assembly, Transmission Assembly, Body Assembly, and Paint Assembly, is broken down into multiple sub-steps, each requiring specific tools and worker expertise. Workers are assigned to tasks based on their roles, such as machinists, welders, and assemblers, and their efficiency and fatigue levels impact the time taken to complete tasks, adding a layer of human resource management to the simulation.
+
+Error handling in the simulation is sophisticated, with different types of errors like mechanical failures, worker mistakes, and supply issues being simulated. These errors are not only logged but also influence the process flow, with some requiring immediate halts, others allowing for task retries, and some necessitating delays due to supply chain problems. The simulation also includes mechanisms for workers to recover from fatigue, ensuring that their efficiency is managed over the course of the process. This creates a more dynamic and realistic simulation environment, reflecting the complexities of real-world manufacturing where both human and mechanical factors must be managed.
+
+Overall, this simulation provides a comprehensive framework for understanding and optimizing the manufacturing process. By simulating worker dynamics, tool usage, task durations, and error handling, it offers valuable insights into workflow efficiency and potential bottlenecks. This can be used for training, planning, or improving actual manufacturing processes, ensuring that resources are utilized effectively and that the production line runs smoothly with minimal disruptions. The inclusion of detailed reporting and logging further enhances the ability to analyze and refine the process over time.
+
+```
+import time
+import random
+
+class Worker:
+    def __init__(self, name, role, efficiency=1.0):
+        self.name = name
+        self.role = role
+        self.efficiency = efficiency  # Efficiency factor to simulate speed of work
+        self.fatigue = 0  # Fatigue level, increases with each task
+
+    def perform_task(self, task_name, tools, base_duration):
+        adjusted_duration = base_duration / self.efficiency
+        adjusted_duration += self.fatigue  # Fatigue slows down the worker
+        print(f"{self.name} ({self.role}) is performing: {task_name}")
+        print(f"Using tools: {', '.join(tools)}")
+        time.sleep(adjusted_duration)
+        self.fatigue += 0.1  # Increase fatigue after each task
+        return adjusted_duration
+
+    def rest(self):
+        print(f"{self.name} is resting to recover from fatigue.")
+        self.fatigue = max(self.fatigue - 0.5, 0)  # Reduce fatigue after rest
+
+class ProcessSimulator:
+    def __init__(self):
+        self.log = []
+
+    def simulate_process(self, process_name, sub_steps, workers):
+        print(f"Starting {process_name}...")
+        self.log.append(f"Starting {process_name}...")
+        
+        for step in sub_steps:
+            step_name, tools, base_duration, required_role = step
+            
+            # Assign a suitable worker based on role and availability
+            worker = self.assign_worker(workers, required_role)
+            if worker is None:
+                error_message = f"No available worker for task: {step_name}. Process halted."
+                print(error_message)
+                self.log.append(error_message)
+                return False
+            
+            adjusted_duration = worker.perform_task(step_name, tools, base_duration)
+            
+            # Simulate random success/failure with detailed error types
+            if random.random() < 0.95:  # 95% chance of success
+                print(f"  Completed: {step_name} in {adjusted_duration:.2f} seconds by {worker.name}")
+                self.log.append(f"  Completed: {step_name} in {adjusted_duration:.2f} seconds by {worker.name}")
+            else:
+                error_message = self.handle_error(process_name, step_name, worker)
+                return False
+            
+        print(f"Completed {process_name}.")
+        self.log.append(f"Completed {process_name}.")
+        return True
+
+    def assign_worker(self, workers, required_role):
+        suitable_workers = [worker for worker in workers if worker.role == required_role and worker.fatigue < 1.5]
+        if suitable_workers:
+            return random.choice(suitable_workers)
+        else:
+            # If no suitable worker is found, return None
+            return None
+
+    def handle_error(self, process_name, step_name, worker):
+        error_type = random.choice(["Mechanical Failure", "Worker Error", "Supply Issue"])
+        print(f"Error encountered: {error_type} during {step_name} by {worker.name}")
+        self.log.append(f"Error encountered: {error_type} during {step_name} by {worker.name}")
+        
+        if error_type == "Mechanical Failure":
+            # Mechanical Failure requires process halt
+            print(f"{process_name} halted due to {error_type} in {step_name}.")
+            self.log.append(f"{process_name} halted due to {error_type} in {step_name}.")
+            return False
+        elif error_type == "Worker Error":
+            # Worker Error might allow for a retry
+            if self.retry_task(worker):
+                return True
+            else:
+                print(f"{process_name} halted after failed retry in {step_name}.")
+                self.log.append(f"{process_name} halted after failed retry in {step_name}.")
+                return False
+        elif error_type == "Supply Issue":
+            # Supply Issue requires rescheduling or waiting for supplies
+            print(f"{process_name} delayed due to {error_type} in {step_name}. Waiting for resolution...")
+            self.log.append(f"{process_name} delayed due to {error_type} in {step_name}. Waiting for resolution...")
+            time.sleep(2)  # Simulate delay
+            return self.simulate_process(process_name, [(step_name, tools, base_duration, required_role)], workers)
+
+    def retry_task(self, worker):
+        print(f"Retrying task due to worker error by {worker.name}...")
+        worker.rest()  # Simulate worker resting to recover from error
+        if random.random() < 0.8:  # 80% chance of success on retry
+            print(f"Task successfully completed on retry by {worker.name}.")
+            self.log.append(f"Task successfully completed on retry by {worker.name}.")
+            return True
+        else:
+            print(f"Retry failed by {worker.name}.")
+            self.log.append(f"Retry failed by {worker.name}.")
+            return False
+
+    def generate_report(self):
+        print("\n--- Manufacturing Process Report ---")
+        for entry in self.log:
+            print(entry)
+        print("\nEnd of Report")
+
+class ChassisAssembly:
+    def __init__(self, simulator, workers):
+        self.simulator = simulator
+        self.workers = workers
+        self.process_name = "Chassis Assembly"
+        self.sub_steps = [
+            ("Steel Frame Production", ["Laser Cutter", "Press Brake", "CNC Machine"], 5, "Frame Specialist"),
+            ("Axles Manufacturing", ["Forging Press", "Heat Treatment Oven", "CNC Lathe"], 6, "Machinist"),
+            ("Suspension Components", ["Shock Absorber Machine", "Spring Coiling Machine"], 4, "Assembler"),
+            ("Welding & Assembly", ["MIG Welder", "TIG Welder", "Hydraulic Press"], 7, "Welder")
+        ]
+
+    def execute(self):
+        return self.simulator.simulate_process(self.process_name, self.sub_steps, self.workers)
+
+class EngineAssembly:
+    def __init__(self, simulator, workers):
+        self.simulator = simulator
+        self.workers = workers
+        self.process_name = "Engine Assembly"
+        self.sub_steps = [
+            ("Cylinder Block Casting", ["Induction Furnace", "Casting Molds"], 6, "Machinist"),
+            ("Piston Manufacturing", ["Die Casting Machine", "CNC Milling Machine"], 5, "Machinist"),
+            ("Crankshaft Machining", ["Crankshaft Forging Press", "Grinding Machine"], 6, "Machinist"),
+            ("Camshaft Production", ["Camshaft Forging Press", "CNC Lathe"], 5, "Machinist"),
+            ("Engine Block Assembly", ["Assembly Line", "Torque Wrench"], 8, "Assembler")
+        ]
+
+    def execute(self):
+        return self.simulator.simulate_process(self.process_name, self.sub_steps, self.workers)
+
+class TransmissionAssembly:
+    def __init__(self, simulator, workers):
+        self.simulator = simulator
+        self.workers = workers
+        self.process_name = "Transmission Assembly"
+        self.sub_steps = [
+            ("Gearbox Production", ["CNC Gear Machining", "Assembly Line"], 6, "Machinist"),
+            ("Clutch Manufacturing", ["Clutch Disc Press", "CNC Machining"], 5, "Assembler"),
+            ("Driveshaft Assembly", ["Driveshaft Lathe", "Balancing Machine"], 4, "Machinist"),
+            ("Transmission Installation", ["Engine Hoist", "Hydraulic Lift"], 7, "Assembler")
+        ]
+
+    def execute(self):
+        return self.simulator.simulate_process(self.process_name, self.sub_steps, self.workers)
+
+class BodyAssembly:
+    def __init__(self, simulator, workers):
+        self.simulator = simulator
+        self.workers = workers
+        self.process_name = "Body Assembly"
+        self.sub_steps = [
+            ("Panel Stamping", ["Stamping Press", "Die Cutter"], 5, "Frame Specialist"),
+            ("Door Manufacturing", ["Door Frame Assembly Line", "Welding Machine"], 6, "Welder"),
+            ("Roof Installation", ["Stamping Press", "Riveting Machine"], 5, "Frame Specialist"),
+            ("Window Installation", ["Glass Cutter", "Adhesive Applicator"], 4, "Assembler"),
+            ("Body Shell Assembly", ["Assembly Line", "Riveting Machine"], 7, "Assembler")
+        ]
+
+    def execute(self):
+        return self.simulator.simulate_process(self.process_name, self.sub_steps, self.workers)
+
+class PaintAssembly:
+    def __init__(self, simulator, workers):
+        self.simulator = simulator
+        self.workers = workers
+        self.process_name = "Paint Assembly"
+        self.sub_steps = [
+            ("Surface Preparation", ["Sanding Machine", "Cleaning Station"], 4, "Painter"),
+            ("Primer Application", ["Spray Gun", "Drying Oven"], 5, "Painter"),
+            ("Color Coating", ["Spray Gun", "Inspection Station"], 6, "Painter"),
+            ("Clear Coat Application", ["Spray Gun", "Gloss Meter"], 5, "Painter"),
+            ("Paint Polishing", ["Buffing Machine", "Inspection Station"], 4, "Painter")
+        ]
+
+    def execute(self):
+        return self.simulator.simulate_process(self.process_name, self.sub_steps, self.workers)
+
+class ManufacturingProcess:
+    def __init__(self):
+        self.simulator = ProcessSimulator()
+
+        # Define a pool of workers with varying efficiency
+        self.workers = [
+            Worker("Alice", "Frame Specialist", efficiency=1.1),
+            Worker("Bob", "Welder", efficiency=1.0),
+            Worker("Charlie", "Machinist", efficiency=0.9),
+            Worker("David", "Assembler", efficiency=1.2),
+            Worker("Eve", "Painter", efficiency=1.1)
+        ]
+
+        # Define stages of the manufacturing process
+        self.stages = [
+            ChassisAssembly(self.simulator, self.workers),
+            EngineAssembly(self.simulator, self.workers),
+            TransmissionAssembly(self.simulator, self.workers),
+            BodyAssembly(self.simulator, self.workers),
+            PaintAssembly(self.simulator, self.workers),
+            # Add more stages if needed...
+        ]
+
+    def run(self):
+        for stage in self.stages:
+            success = stage.execute()
+            if not success:
+                print("Manufacturing process halted due to an error.")
+                break
+        else:
+            print("Manufacturing process completed successfully.")
+            self.simulator.log.append("Manufacturing process completed successfully.")
+        
+        self.simulator.generate_report()
+
+# Run the manufacturing process simulation
+process = ManufacturingProcess()
+process.run()
+```
+
+1. Worker Class:
+   - Manages workers who have roles, efficiency, and fatigue levels. Workers perform tasks, and their performance is adjusted by their efficiency and fatigue.
+
+2. ProcessSimulator Class:
+   - Simulates each manufacturing process step by assigning workers, calculating task durations, and handling errors (mechanical failures, worker errors, supply issues). It also manages retries and delays where applicable.
+
+3. Assembly Classes:
+   - Represent different stages of the manufacturing process (Chassis Assembly, Engine Assembly, etc.). Each stage has specific sub-steps with tools, duration, and required worker roles.
+
+4. ManufacturingProcess Class:
+   - Orchestrates the overall manufacturing process by initializing workers and stages, running the simulation, and generating a final report.
+
+<br>    
+</details>
+
 #
 
 ![Assembly](https://github.com/user-attachments/assets/cfdd823c-b1ea-462b-ad10-cc1e1a155693)
