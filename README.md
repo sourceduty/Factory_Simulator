@@ -1186,7 +1186,7 @@ process.run()
 
 #
 
-![Stooge](https://github.com/user-attachments/assets/84512ace-115a-46bc-bdba-f3b7ff93ddaf)
+![Chaplin](https://github.com/user-attachments/assets/e06018b8-5b9d-410d-861a-864b6d5afd83)
 
 ***
 Copyright (C) 2024, Sourceduty - All Rights Reserved.
